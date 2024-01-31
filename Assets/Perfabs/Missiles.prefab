@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2290828665058485117}
   speed: 10
+  speed_multiplier: 1
 --- !u!68 &-8875635999720974976
 EdgeCollider2D:
   m_ObjectHideFlags: 0
