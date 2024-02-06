@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 84533945}
   - component: {fileID: 84533944}
   m_Layer: 5
-  m_Name: score
+  m_Name: scoreTex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,7 +285,8 @@ Transform:
   m_LocalPosition: {x: -2.2304542, y: 0.28134072, z: 0.22144857}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2091980433}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -469,7 +470,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2042340890}
-  - {fileID: 2091980433}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -939,8 +939,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 84533943}
-  m_Father: {fileID: 785949556}
-  m_RootOrder: 1
+  m_Father: {fileID: 280134074}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -959,6 +959,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85844697af2e89d4d83933226c17f945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
+  ScoreText: {fileID: 84533944}
+  pointsPerSecond: 20
 --- !u!114 &2091980435
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -32,4 +32,13 @@ public class MoveMent : MonoBehaviour
             rb.transform.position = new Vector2(-speed + rb.position.x, rb.position.y);
         }
     }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "Enemy")
+        {
+            Destroy (gameObject);
+        }
+
+
+    }
 }
