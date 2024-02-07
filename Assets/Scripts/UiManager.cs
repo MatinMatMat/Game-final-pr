@@ -9,7 +9,7 @@ using TMPro;
 
 public class UiManager : MonoBehaviour
 {
-
+    public Button[] buttons;
     int score;
     public TMPro.TextMeshProUGUI ScoreText;
     public bool gameOver;
@@ -41,6 +41,11 @@ public class UiManager : MonoBehaviour
     public void gameOverActivate()
     {
         gameOver = true;
+        foreach (Button button in buttons) {
+
+            button.gameObject.SetActive(true);
+        
+        }
 
 
     }
