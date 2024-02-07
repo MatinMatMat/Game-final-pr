@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class UiManager : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class UiManager : MonoBehaviour
     }
     public void Play()
     {
-        Application.LoadLevel("SampleScene");
+        SceneManager.LoadScene("SampleScene");
     }
     public void Pause()
     {
@@ -29,5 +29,15 @@ public class UiManager : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("menuScene");
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
