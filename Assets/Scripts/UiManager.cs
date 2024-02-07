@@ -15,6 +15,10 @@ public class UiManager : MonoBehaviour
     {
         
     }
+    public void Play()
+    {
+        Application.LoadLevel("SampleScene");
+    }
     public void Pause()
     {
         if (Time.timeScale == 1)
