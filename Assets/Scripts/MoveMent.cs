@@ -12,7 +12,7 @@ public class MoveMent : MonoBehaviour
     [SerializeField]
     Rigidbody2D rb;
     [SerializeField]
-
+    public UiManager ui;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +36,7 @@ public class MoveMent : MonoBehaviour
     {
         if(col.gameObject.tag == "Enemy")
         {
+            ui.gameOverActivate();
             Destroy (gameObject);
         }
 
