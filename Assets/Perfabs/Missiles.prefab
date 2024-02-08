@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7651033424709231959}
   - component: {fileID: 2290828665058485117}
   - component: {fileID: 1426973599097780830}
-  - component: {fileID: 2210635440610619427}
   - component: {fileID: 56464472255954739}
+  - component: {fileID: 7773380627630662301}
   m_Layer: 0
   m_Name: Missiles
   m_TagString: Enemy
@@ -123,50 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2290828665058485117}
   speed: 10
---- !u!68 &2210635440610619427
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5437412533014772436}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 1.5537269, y: 2.2711773}
-  - {x: 1.6305976, y: -2.2279696}
-  - {x: 2.8863008, y: -2.9543576}
-  - {x: 3.2789505, y: -3.4508624}
-  - {x: 3.2976828, y: -4.2880397}
-  - {x: 1.3172537, y: -4.3277884}
-  - {x: 1.4431568, y: -5.06756}
-  - {x: -0.8287789, y: -5.0925813}
-  - {x: -0.9923129, y: -4.3351636}
-  - {x: -2.8326242, y: -4.37724}
-  - {x: -2.8270643, y: -4.090238}
-  - {x: -2.2483413, y: -2.9994123}
-  - {x: -1.3554363, y: -2.474348}
-  - {x: -1.499559, y: 2.0530965}
-  - {x: -2.9596055, y: 2.1786492}
-  - {x: -1.5803307, y: 6.9952507}
-  - {x: -1.7238008, y: 10.487412}
-  - {x: -0.5772947, y: 12.758727}
-  - {x: 0.41063768, y: 12.77633}
-  - {x: 1.5808824, y: 10.400431}
-  - {x: 1.7324281, y: 7.3053823}
-  - {x: 3.1644561, y: 2.3661907}
-  - {x: 2.4219928, y: 2.303358}
-  - {x: 1.5062258, y: 2.2758467}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!95 &56464472255954739
 Animator:
   serializedVersion: 4
@@ -187,3 +143,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &7773380627630662301
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5437412533014772436}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.091412365, y: 3.4736886}
+  m_Size: {x: 6.3804464, y: 19.096909}
+  m_Direction: 0
