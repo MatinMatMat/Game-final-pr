@@ -13,6 +13,7 @@ public class UiManager : MonoBehaviour
     int score;
     public TMPro.TextMeshProUGUI ScoreText;
     public bool gameOver;
+    public TMPro.TextMeshProUGUI Gameover;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +47,7 @@ public class UiManager : MonoBehaviour
             button.gameObject.SetActive(true);
         
         }
+        Gameover.text = "YOU ARE DONE! PATHETIC CREATURE";
 
 
     }
