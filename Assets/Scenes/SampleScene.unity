@@ -438,6 +438,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8e2af2d3f93004a887520ee560129c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1445878178}
+  - {fileID: 1427459430}
+  - {fileID: 594134131}
+  ScoreText: {fileID: 84533944}
+  gameOver: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &594134130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1616,7 +1622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1427459429
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1750,7 +1756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1445878177
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1993,6 +1999,7 @@ MonoBehaviour:
   rightKey: 275
   leftKey: 276
   rb: {fileID: 1706901183}
+  ui: {fileID: 280134075}
 --- !u!50 &1706901183
 Rigidbody2D:
   serializedVersion: 4
@@ -2197,9 +2204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85844697af2e89d4d83933226c17f945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  ScoreText: {fileID: 84533944}
-  pointsPerSecond: 20
 --- !u!114 &2091980435
 MonoBehaviour:
   m_ObjectHideFlags: 0
