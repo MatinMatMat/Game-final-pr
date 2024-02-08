@@ -18,7 +18,7 @@ public class Spawn : MonoBehaviour
     IEnumerator spawn_timer()
     {
         yield return new WaitForSeconds(spawnrate);
-        Destroy(Instantiate(ms, new Vector2(Random.Range(-4.5f , 4.5f),-7), Quaternion.identity) , 2f);
+        Destroy(Instantiate(ms, new Vector2(Random.Range(-4.3f , 4.3f),-7), Quaternion.identity) , 2f);
         StartCoroutine(spawn_timer());
 
     }
