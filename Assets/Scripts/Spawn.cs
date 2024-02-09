@@ -7,12 +7,14 @@ public class Spawn : MonoBehaviour
     [SerializeField]
     GameObject ms;
 
-
     [SerializeField]
     float spawnrate = 2f;
 
     [SerializeField]
-    float spawn_multiplier = 1f;
+    float spawn_subs = 0.1f;
+
+    [SerializeField]
+    float spawnrate_limit = 0.3f;
 
 
     void Start()
@@ -21,14 +23,13 @@ public class Spawn : MonoBehaviour
     }
     void Update()
     {
-        spawnrate -= Time.deltaTime * spawn_multiplier;
+        spawnrate -= Time.deltaTime * spawn_subs;
     }
 
     IEnumerator spawn_timer()
     {
-
-        yield return new WaitForSeconds(Mathf.Max(0.5f, spawnrate));
-        Destroy(Instantiate(ms, new Vector2(Random.Range(-4.5f , 4.5f),-7), Quaternion.identity) , 2f);
+        yield return new WaitForSeconds(Mathf.Max(spawnrate_limit, spawnrate));
+        Destroy(Instantiate(ms, new Vector2(Random.Range(-7.3f , 7.3f),-9.5f), Quaternion.identity) , 2f);
         StartCoroutine(spawn_timer());
 
     }
